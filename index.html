@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Industrial Training Kits — Enterprise Platform (Phase 4)</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="task4.css">
+</head>
+<body>
+
+  <header class="navbar">
+    <div class="nav-container">
+      <a href="#home" class="brand-logo">
+        <span class="logo-icon">⚡</span>
+        <span class="logo-text">Industrial <span class="highlight">Training Kits</span></span>
+      </a>
+
+      <button class="nav-toggle js-nav-toggle" aria-label="Toggle navigation">
+        <span class="hamburger">☰</span>
+      </button>
+
+      <nav class="nav-menu js-nav-menu">
+        <a href="#home" class="nav-link active">Home</a>
+        <a href="#specs" class="nav-link">Specs</a>
+        
+        <div class="nav-dropdown">
+          <a href="#modules" class="nav-link dropdown-btn">
+            Services <span class="arrow">▾</span>
+          </a>
+          <div class="dropdown-content">
+            <a href="#microcontrollers">Microcontroller Kit</a>
+            <a href="#plc-automation">PLC Automation</a>
+            <a href="#iot-sensors">IoT & Sensors</a>
+          </div>
+        </div>
+
+        <a href="#register" class="btn-primary-sm">Register Gate</a>
+
+        <button class="search-btn js-theme-toggle" aria-label="Toggle theme" title="Toggle Theme">
+          <span class="theme-icon js-theme-icon">🌙</span>
+        </button>
+        <button class="search-btn js-search-btn" aria-label="Search site content">
+          <span>🔍</span>
+        </button>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero-section" id="home">
+      <div class="hero-inner">
+        <div class="status-pill">
+          <span class="status-dot"></span> Hardware Architecture & Industrial Labs
+        </div>
+        
+        <h1 class="hero-title">
+          Modular Hardware & <br>
+          <span class="gradient-text">Industrial Training Kits</span>
+        </h1>
+        
+        <p class="hero-subtext">
+          Hands-on microcontrollers, automation control systems, and telemetry hardware engineered for technical exhibits.
+        </p>
+
+        <div class="hero-buttons">
+          <a href="#modules" class="btn-main btn-main-primary">Explore Services</a>
+          <a href="#specs" class="btn-main btn-main-outline">View Specifications</a>
+        </div>
+      </div>
+    </section>
+
+    <div class="main-wrapper">
+      <div class="content-grid">
+        
+        <section class="modules-section" id="modules">
+          <div class="section-title-wrap">
+            <h2 class="section-title">Training Services & Modules</h2>
+            <p class="section-subtitle">Structured hardware modules for modern laboratory testing.</p>
+          </div>
+
+          <div class="cards-layout js-cards-container">
+            
+            <article class="custom-card js-card" id="microcontrollers">
+              <div class="card-image-box">
+                <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=500&q=80" 
+                     alt="Microcontroller Hardware" class="card-img" loading="lazy">
+                <span class="card-tag tag-cyan">Hardware & Assembly</span>
+              </div>
+              <div class="card-body">
+                <h3 class="card-heading js-card-title">Microcontroller Kit</h3>
+                <p class="card-text">
+                  Master assembly programming, register configuration, bitwise operations, and real-time I/O interfaces.
+                </p>
+                <div class="card-footer">
+                  <button class="action-btn js-open-module" 
+                          data-title="Microcontroller Kit"
+                          data-tag="Hardware & Assembly"
+                          data-img="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=500&q=80"
+                          data-desc="This comprehensive laboratory training kit provides low-level architecture exposure focusing on assembly programming, register operations, and hardware interfacing using the 8088 microprocessor."
+                          data-spec1="8088 Microprocessor & Registers"
+                          data-spec2="16-Bit Parallel I/O Ports"
+                          data-spec3="DOSBox & MASM/NASM Integrated Workspace">
+                    <span class="btn-text">Explore Module</span>
+                    <span class="btn-icon">→</span>
+                  </button>
+                </div>
+              </div>
+            </article>
+
+            <article class="custom-card js-card" id="plc-automation">
+              <div class="card-image-box">
+                <img src="https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&w=500&q=80" 
+                     alt="PLC Automation" class="card-img" loading="lazy">
+                <span class="card-tag tag-emerald">Industrial Control</span>
+              </div>
+              <div class="card-body">
+                <h3 class="card-heading js-card-title">PLC & Automation</h3>
+                <p class="card-text">
+                  Industrial logic controls, ladder sequencing, relay logic circuits, and automated manufacturing systems.
+                </p>
+                <div class="card-footer">
+                  <button class="action-btn js-open-module"
+                          data-title="PLC & Automation"
+                          data-tag="Industrial Control"
+                          data-img="https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&w=500&q=80"
+                          data-desc="Engineered for industrial automation training, this module introduces Programmable Logic Controllers (PLCs), relay switching matrices, safety isolation, and ladder logic execution."
+                          data-spec1="Industrial 24V Logic Architecture"
+                          data-spec2="Optocoupler Isolated Input Channel Array"
+                          data-spec3="SCADA & Ladder Simulation Compatibility">
+                    <span class="btn-text">Explore Module</span>
+                    <span class="btn-icon">→</span>
+                  </button>
+                </div>
+              </div>
+            </article>
+
+            <article class="custom-card js-card" id="iot-sensors">
+              <div class="card-image-box">
+                <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=500&q=80" 
+                     alt="Sensors IoT" class="card-img" loading="lazy">
+                <span class="card-tag tag-amber">Telemetry & Sensors</span>
+              </div>
+              <div class="card-body">
+                <h3 class="card-heading js-card-title">Sensors & IoT Module</h3>
+                <p class="card-text">
+                  Connect physical multi-channel sensor arrays, telemetry modules, and web servers via standard protocols.
+                </p>
+                <div class="card-footer">
+                  <button class="action-btn js-open-module"
+                          data-title="Sensors & IoT Module"
+                          data-tag="Telemetry & Sensors"
+                          data-img="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=500&q=80"
+                          data-desc="Connect analog and digital sensor networks directly to telemetry modules. Features real-time environmental data acquisition, cloud transmission, and web Dashboard visualization."
+                          data-spec1="RS485, Modbus & SPI Bus Networks"
+                          data-spec2="Multi-Channel ADC Data Logger Interface"
+                          data-spec3="MQTT Protocols & Cloud Telemetry Support">
+                    <span class="btn-text">Explore Module</span>
+                    <span class="btn-icon">→</span>
+                  </button>
+                </div>
+              </div>
+            </article>
+
+          </div>
+        </section>
+
+        <section class="specs-section" id="specs">
+          <div class="section-title-wrap">
+            <h2 class="section-title">Technical Specifications</h2>
+            <p class="section-subtitle">Enterprise hardware standards engineered for optimal testing.</p>
+          </div>
+
+          <div class="specs-cards">
+            <div class="spec-box">
+              <div class="spec-header">
+                <span class="spec-icon">⚡</span>
+                <h4>Power System</h4>
+              </div>
+              <ul>
+                <li><strong>Input:</strong> Dual 5V / 12V Regulated DC</li>
+                <li><strong>Protection:</strong> Overcurrent Fuse Safeguard</li>
+              </ul>
+            </div>
+
+            <div class="spec-box">
+              <div class="spec-header">
+                <span class="spec-icon">🔌</span>
+                <h4>I/O Architecture</h4>
+              </div>
+              <ul>
+                <li><strong>Processor:</strong> 8088 Microprocessor</li>
+                <li><strong>Channels:</strong> 16 Programmable GPIO</li>
+              </ul>
+            </div>
+
+            <div class="spec-box">
+              <div class="spec-header">
+                <span class="spec-icon">🌐</span>
+                <h4>Connectivity</h4>
+              </div>
+              <ul>
+                <li><strong>Serial:</strong> USB-C / RS485 Bus</li>
+                <li><strong>Software:</strong> DOSBox & NASM Tools</li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <!-- =================================================================== -->
+        <!-- PHASE 4 INTEGRATED VALIDATION FORM ENGINE & PAYLOAD CONSOLE        -->
+        <!-- =================================================================== -->
+        <section class="register-section" id="register">
+          <div class="section-title-wrap">
+            <h2 class="section-title">Registration Gate (Phase 4 Engine)</h2>
+            <p class="section-subtitle">Secure credential validation gateway with accessibility tethering.</p>
+          </div>
+
+          <div class="validation-grid">
+            <div class="form-container-card">
+              <form id="registrationForm" novalidate>
+                
+                <!-- Full Name Field -->
+                <div class="field-group">
+                  <label for="fullName" class="field-label">Full Name</label>
+                  <input 
+                    type="text" 
+                    id="fullName" 
+                    class="field-input" 
+                    placeholder="John Doe"
+                    aria-describedby="name-error"
+                    aria-invalid="false"
+                    required
+                  >
+                  <span class="field-error" id="name-error" role="alert"></span>
+                </div>
+
+                <!-- Email Field -->
+                <div class="field-group">
+                  <label for="email" class="field-label">Email Address</label>
+                  <input 
+                    type="email" 
+                    id="email" 
+                    class="field-input" 
+                    placeholder="engineer@domain.com"
+                    aria-describedby="email-error"
+                    aria-invalid="false"
+                    required
+                  >
+                  <span class="field-error" id="email-error" role="alert"></span>
+                </div>
+
+                <!-- Password Field -->
+                <div class="field-group">
+                  <label for="password" class="field-label">Password</label>
+                  <input 
+                    type="password" 
+                    id="password" 
+                    class="field-input" 
+                    placeholder="••••••••"
+                    aria-describedby="password-error"
+                    aria-invalid="false"
+                    required
+                  >
+                  <span class="field-error" id="password-error" role="alert"></span>
+                  <small class="field-hint">Must contain 8+ chars: Uppercase, Lowercase, Number & Special symbol (#?!@$%^&*-)</small>
+                </div>
+
+                <button type="submit" class="btn-main btn-main-primary submit-btn">Deploy Validation Payload</button>
+              </form>
+
+              <!-- ARIA Live Region -->
+              <div id="live-region" aria-live="polite" class="live-region-box"></div>
+            </div>
+
+            <!-- JSON System Output Card -->
+            <div class="console-card">
+              <h3 class="console-title">System Transmission Output</h3>
+              <div class="json-terminal" id="jsonConsole">
+                <pre>// System Idle. Awaiting form submission...</pre>
+              </div>
+            </div>
+          </div>
+        </section>
+
+      </div>
+
+      <aside class="sidebar-box">
+        <div class="widget">
+          <h3 class="widget-title">System Notice</h3>
+          <p class="widget-desc">
+            <strong>Exhibition Ready:</strong> All training kit modules adhere to standard hardware protocols for live demonstration.
+          </p>
+          <div class="widget-badge">Exhibition Ready</div>
+        </div>
+      </aside>
+    </div>
+  </main>
+
+  <!-- Dynamic Module Detail Modal -->
+  <div class="detail-modal js-detail-modal" id="detail-modal">
+    <div class="detail-modal-content">
+      <button class="search-modal-close js-detail-close">&times;</button>
+      <div class="modal-image-box">
+        <img id="modal-img" src="" alt="Module Preview" class="modal-banner">
+        <span id="modal-tag" class="card-tag tag-cyan">Tag</span>
+      </div>
+      <div class="modal-body-content">
+        <h2 id="modal-title" class="modal-title">Module Title</h2>
+        <p id="modal-desc" class="modal-desc">Module detailed overview text will appear here...</p>
+        
+        <div class="modal-specs-wrap">
+          <h4>Key Technical Specifications:</h4>
+          <ul>
+            <li id="modal-spec1">Spec item 1</li>
+            <li id="modal-spec2">Spec item 2</li>
+            <li id="modal-spec3">Spec item 3</li>
+          </ul>
+        </div>
+
+        <div class="modal-actions">
+          <button class="btn-main btn-main-primary js-detail-close">Close Preview</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Interactive Search Modal -->
+  <div class="search-modal js-search-modal" id="search-modal">
+    <div class="search-modal-content">
+      <button class="search-modal-close js-search-close">&times;</button>
+      <h3>Search Kits & Modules</h3>
+      <input type="text" class="search-modal-input js-search-input" placeholder="Search (e.g. PLC, Microcontroller, Sensors)...">
+      <div class="search-results js-search-results">
+        <p class="search-hint">Type above to filter modules live...</p>
+      </div>
+    </div>
+  </div>
+
+  <footer class="site-footer" id="contact">
+    <div class="footer-container">
+      <div class="footer-col brand-col">
+        <div class="brand-logo">
+          <span class="logo-icon">⚡</span>
+          <span class="logo-text">Industrial <span class="highlight">Training Kits</span></span>
+        </div>
+        <p>Empowering engineers with high-performance modular hardware architecture and interactive training solutions.</p>
+      </div>
+
+      <div class="footer-col">
+        <h4>Platform</h4>
+        <ul>
+          <li><a href="#home">Overview</a></li>
+          <li><a href="#modules">Services</a></li>
+          <li><a href="#specs">Specifications</a></li>
+          <li><a href="#register">Register Gate</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Hardware Kits</h4>
+        <ul>
+          <li><a href="#microcontrollers">Microcontroller Kit</a></li>
+          <li><a href="#plc-automation">PLC Automation</a></li>
+          <li><a href="#iot-sensors">IoT & Sensors</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <p>Inquiries: support@industrialtrainingkits.com</p>
+        <p>Phone: +1 (800) 555-0199</p>
+      </div>
+    </div>
+    
+    <div class="footer-bottom">
+      <p>© 2026 Industrial Training Kits. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="task4.js"></script>
+</body>
+</html>
